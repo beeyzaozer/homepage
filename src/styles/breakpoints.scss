@@ -1,0 +1,130 @@
+$breakpoints: (
+    "xs": 0,
+    "sm": 540px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+);
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @content;
+    };
+};
+@mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")) {
+        @content;
+    };
+};
+@mixin md {
+    @media (min-width: map-get($breakpoints, "md")) {
+        @content;
+    };
+};
+@mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")) {
+        @content;
+    };
+};
+@mixin xl {
+    @media (min-width: map-get($breakpoints, "xl")) {
+        @content;
+    };
+};
+@mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
+        @content
+    }
+    
+};
+.responsive-header {
+    @include xs {
+        column-gap: 18px;
+    }
+    @include md {
+        column-gap: 50px;
+    }
+}
+.top-footer-responsive {
+    @include xs {
+        flex-direction: column;
+    }
+    @include sm {
+        flex-direction: column;
+    }
+    @include md {
+        flex-direction: column;
+    }
+    @include lg {
+        flex-direction: row;
+        gap: 5rem;
+    }
+    @include xl {
+        flex-direction: row;
+        gap: 10rem;
+    }
+}
+.responsive-text {
+    @include xs {
+        margin-right: 34px;
+        text-align: center;
+    }
+    @include lg {
+        text-align: left;
+    }
+    @include xl {
+        text-align: left;
+    }
+}
+.responsive-send-button {
+    @include xs {
+        margin: 35px 0px 0px 85px ;
+    }
+    @include lg {
+        align-self: flex-end;
+        margin: 0px;
+    }
+}
+.responsive-input {
+    @include xs {
+        margin: 30px 16px 0px 0px;
+    }
+    @include lg {
+        display: flex;
+    }
+}
+.responsive-license {
+    @include xs {
+        display: none;
+    }
+    @include lg {
+        display: block;
+    }
+    
+}
+.responsive-under-footer{
+    @include xs {
+        display: flex;
+        flex-direction: column;
+    }
+    @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 7rem;
+    }
+}
+.responsive-navbar {
+    @include xs {
+        display: flex;
+        justify-content: center;
+        margin: 14px 0px;
+    }
+}
+.responsive-social-media {
+    @include xs {
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    @include lg {
+        justify-content: space-between;
+    }
+}

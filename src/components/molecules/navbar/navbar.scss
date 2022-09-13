@@ -1,0 +1,12 @@
+.navbar{
+   display: flex;
+   flex-wrap: wrap;
+
+   .link{
+    text-decoration: none;
+    color: gray;
+    margin-right: 3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+   }
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/variables.scss';
+.icon-container {
+    color: $light;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.link-container {
+    border-radius: 100%;
+    padding: 5px;
+}
+.facebook {
+    background-color: rgb(66, 103, 178);
+}
+.linkedin {
+    background-color: rgb(18, 125, 175);
+}
+.twitter {
+    background-color: rgb(29, 161, 242);
+}

@@ -1,0 +1,15 @@
+
+.container {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+  }
+}
+
+
