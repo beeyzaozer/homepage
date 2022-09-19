@@ -14,9 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Technologies I Used
 
--Atomic Design
--Context API
--Sass
+* Atomic Design
+* Context API
+* Sass
 
 ### You can access from link
 
